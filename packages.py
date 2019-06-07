@@ -11,7 +11,7 @@ UNK_KEY = '<UNK>'
 NULL_KEY = '<NULL>'
 YELP_DIR = os.path.join(DATA_DIR, 'yelp')
 DATASET_DIR = os.path.join(DATA_DIR, 'dataset')
-
+MISC_DIR = os.path.join(DATA_DIR, 'misc')
 def glove2dict(src_filename):
     """ by Christopher Potts
     GloVe Reader.
