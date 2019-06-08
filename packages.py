@@ -99,3 +99,4 @@ def load_pickle(path):
 def save_pickle(path, data):
     with open(path, 'wb+') as f:
         pickle.dump(data, f)
+        
