@@ -2,6 +2,7 @@ import os
 import numpy as np
 import pandas as pd
 import pickle
+import itertools
 from scipy.spatial.distance import cosine
 
 SRC_DIR = os.path.dirname(os.path.realpath(__file__))
@@ -12,6 +13,19 @@ NULL_KEY = '<NULL>'
 YELP_DIR = os.path.join(DATA_DIR, 'yelp')
 DATASET_DIR = os.path.join(DATA_DIR, 'dataset')
 MISC_DIR = os.path.join(DATA_DIR, 'misc')
+
+def rename(newname):
+    def decorator(f):
+        f.__name__ = newname
+        return f
+    return decorator
+
+def find_subsets_of_n(S,n):
+    if n == 0:
+        return []
+    return list(itertools.combinations(S, n)) #+ find_subsets_up_to_n(S, n-1)
+
+
 def glove2dict(src_filename):
     """ by Christopher Potts
     GloVe Reader.
