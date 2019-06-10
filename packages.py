@@ -8,6 +8,7 @@ from scipy.spatial.distance import cosine
 SRC_DIR = os.path.dirname(os.path.realpath(__file__))
 DATA_DIR = os.path.join(SRC_DIR, '..', 'data')
 GLOVE_DIR = os.path.join(DATA_DIR, 'glove.6B')
+MODELS_DIR = os.path.join(SRC_DIR, '..', 'models')
 UNK_KEY = '<UNK>'
 NULL_KEY = '<NULL>'
 YELP_DIR = os.path.join(DATA_DIR, 'yelp')
