@@ -10,4 +10,4 @@ Next, we began experimenting with different models. We started using the GLoVe p
 ## Outcome
 We beat both the benchmarks we created for ourselves as well as any prior research found on the task. Moreover, I gained confidence working with datasets larger than the amount of RAM available by leveraging and becoming very accustomed to the Tensorflow machine learning library.
 
-Please have a look at our [Project report](http://bit.ly/yelp-nlu-report).
+Please have a look at our [project report](http://bit.ly/yelp-nlu-report).
